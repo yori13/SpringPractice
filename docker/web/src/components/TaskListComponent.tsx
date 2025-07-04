@@ -2,10 +2,10 @@ import React from "react";
 
 export default function TaskListComponent() {
   const list = [
-    { id: 1, task: "API実装", limit: "2025-07-10", status: "対応中" },
-    { id: 2, task: "テーブル設計", limit: "2025-07-01", status: "対応中" },
-    { id: 3, task: "要件定義", limit: "2025-07-06", status: "完了" },
-    { id: 4, task: "要件定義", limit: "2025-07-03", status: "未対応" }
+    { id: 1, task: "開発環境構築", limit: "2025-07-05", status: "対応中" },
+    { id: 2, task: "テーブル設計", limit: "", status: "未対応" },
+    { id: 3, task: "外部設計（バックエンド）", limit: "2025-07-06", status: "未対応" },
+    { id: 4, task: "要件定義", limit: "2025-07-01", status: "完了" }
   ];
 
   const today = new Date();
