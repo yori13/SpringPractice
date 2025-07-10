@@ -2,22 +2,21 @@ package com.example.demo.repository;
 
 import java.util.List;
 
-import org.seasar.doma.Dao;
-import org.seasar.doma.Select;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.demo.entity.SampleEntity;
 
 /**
  * SampleDao は、SampleEntity に対するデータベースアクセス操作を定義するインターフェースです。
  */
-@Dao
-public interface SampleDao {
+
+public interface SampleRepository extends JpaRepository<SampleEntity, Integer> {
 
     /**
      * 全レコードを取得します。
      *
      * @return SampleEntity のリスト
      */
-	@Select
-	List<SampleEntity> selectAll();
+
+	List<SampleEntity> findAll();
 }

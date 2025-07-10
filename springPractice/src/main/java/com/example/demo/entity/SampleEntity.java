@@ -1,18 +1,16 @@
 package com.example.demo.entity;
 
-import org.seasar.doma.Entity;
-import org.seasar.doma.Id;
+import org.springframework.data.annotation.Id;
 
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 
 /**
  * SampleEntity は、DB テーブルのレコードを表すエンティティクラスです。
  */
 @Entity
-@Setter
-@Getter
+@Table(name = "sample")
 public class SampleEntity {
 
 	/** プライマリキーID */
@@ -20,4 +18,5 @@ public class SampleEntity {
 	Integer id;
 	
 	String name;
+
 }
